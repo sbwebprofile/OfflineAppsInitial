@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>
+    $(function () {
+        var locale = window.localStorage;
+        var data = JSON.parse(locale.getItem("cart"));
+        $("#txt_id").text(data.ID);
+        $("#txt_name").text(data.Name);
+        $("#txt_price").text(data.Price);
+        $("#txt_quan").text(data.Quantity);
+    });
+</script>
+        <meta charset="utf-8" />
+        <title>Review</title>
+    </head>
+    <body>
+        <table border="1">
+               <thead>
+                   <tr>
+                     <th>Item ID</th>
+                     <th>Name</th>
+                     <th>Price</th>
+                     <th>Quantity</th>
+                   </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td><span id="txt_id"></span></td>
+                <td><span id="txt_name"></span></td>
+                <td><span id="txt_price"></span></td>
+                <td><span id="txt_quan"></span></td>
+            </tr></tbody>
+        </table>
+    </body>
+  
+</html>

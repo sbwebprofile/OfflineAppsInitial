@@ -1,0 +1,13 @@
+CACHE MANIFEST
+#v1.0
+CACHE:
+/home.html
+/StyleSheet.css
+/Script.js
+
+NETWORK:
+*
+
+FALLBACK:
+/html/offline.html
+
